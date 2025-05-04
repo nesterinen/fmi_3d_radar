@@ -86,7 +86,7 @@ function App() {
       </div>
       <div>
         <button onClick={() => pref()}>prev</button>
-        <button onClick={() => console.log(buffer1.pointCloudBuffer)}>status</button>
+        <button onClick={() => console.log([buffer1.pointCloudBuffer, buffer2.pointCloudBuffer])}>status</button>
         <button onClick={() => setBufferindex()}>zero</button>
         <button onClick={() => nextf()}>next</button>
       </div>
