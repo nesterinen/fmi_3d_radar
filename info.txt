@@ -1,0 +1,22 @@
+Radar position's // https://en.ilmatieteenlaitos.fi/observation-stations?filterKey=groups&filterQuery=radar
+ -Kitee Kesälahti = Lat: 61.9, Lon: 29.8, Elevation: 174
+    -actual: 61.906974525588026, 29.797731354104858
+
+
+d = √(x2 - x1)^2 + (y2 - y1)^2
+a = c × sin(α)
+
+
+// scaled pixel resolution:
+resoluton = 250m^2
+tiff = 2000^2
+img = 1468^2
+
+multi = img/tiff = 0,734
+scaled resolution = resolution * multi = 183,5
+
+1px = 183,5
+
+
+https://earthcurvature.com/
+dropoff at 250km is 4904.41 meters

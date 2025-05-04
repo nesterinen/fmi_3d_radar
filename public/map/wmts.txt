@@ -1,0 +1,18 @@
+https://www.maanmittauslaitos.fi/karttakuvapalvelu/tekninen-kuvaus-wmts
+https://docs.google.com/document/d/1CT173PSOLf_6EQJuHbWtkx6P0zqxySxX/edit?tab=t.0
+
+Lyhyesti esim. ETRS-TM35FIN-koordinaatiston karttatiilet:
+
+1) Lähtöpiste: xMIN=-548576, yMAX=8388608
+2) tiilen rivi: (yMAX-y) / (256 * <jhs-tason resoluutio> + 0.5), jossa y on pisteen pohjoiskoord.
+3) tiilen sarake: (x - xMIN) / (256 * <jhs-tason resoluutio> + 0.5), jossa x on pisteen itäkoord.
+
+
+
+    const api_key = '7737f837-ab4a-4765-9727-6deaa4a80082'
+    const baseUrl = 'https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts?service=WMTS&request=GetTile&version=1.0.0'
+    const layer = '&layer=' + 'ortokuva'
+    const crs = '&TileMatrixSet=WGS84_Pseudo-Mercator'
+    const tile = '&TileMatrix={z}&TileRow={y}&TileCol={x}'
+    const format = '&style=default&format=image/png&api-key=' + api_key
+    const mmlWMTS = baseUrl + layer + crs + tile + format
