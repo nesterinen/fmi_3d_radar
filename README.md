@@ -11,7 +11,7 @@
   <li>fetches radar data on 10.3.2025 (snow storm, kesälahti radar)</li>
   <li>fetched data types: etop: 20 and ppi: 3.0° (supports multiple pointclouds and types with buffers)</li>
   <li>buttons for going next(-1h, supports buffering.) previous(+1h) {0-24hours from the set date}</li>
-  <li>buttons for poincould stats(console.log()) and zero for going back to set date starting time</li>
+  <li>buttons for pointcould stats(console.log()) and zero for going back to set date starting time</li>
 </ul>
 
 ---
